@@ -1,0 +1,19 @@
+Attribute: Deposit_ID
+Command: =CONCATENATE(ROW()-1)
+Description: Generates unique deposit IDs without the 'D' prefix for each row.
+
+Attribute: Deposit_Date
+Command: =TODAY()-RANDBETWEEN(1,365)
+Description: Generates a random date within the last year for deposit dates.
+
+Attribute: Amount
+Command: =RANDBETWEEN(100,10000)
+Description: Generates a random amount between 100 and 10000 for each deposit.
+
+Attribute: Account_Number
+Command: =INDEX(Account.xlsx!$A:$A, RANDBETWEEN(1,COUNTA(Account.xlsx!$A:$A)))
+Description: Selects a random account number from the Account.xlsx file for each deposit.
+
+Attribute: Interest_Rate_ID
+Command: =INDEX(Interest_Rate.xlsx!$A:$A, RANDBETWEEN(1,COUNTA(Interest_Rate.xlsx!$A:$A)))
+Description: Selects a random interest rate ID from the Interest_Rate.xlsx file for each deposit.
