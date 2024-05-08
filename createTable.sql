@@ -39,7 +39,6 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         FOREIGN KEY(Client_ID) REFERENCES CLIENT(ID),
         FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID)
 );
-
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
     ID VARCHAR(50) PRIMARY KEY CHECK
@@ -54,8 +53,16 @@ CREATE TABLE IF NOT EXISTS Worker(
 CREATE TABLE IF NOT EXISTS Interest_Rate(
     Interest_Rate_ID VARCHAR(50) PRIMARY KEY CHECK
         (Interest_Rate_ID >= 0),
-        Benefits VARCHAR(255),
-        TYPE VARCHAR(50),
+        Benefits VARCHAR(255)
+    CHECK
+        (
+            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Solider" OR Benefits = "Student"
+        ),
+        TYPE VARCHAR(50)
+    CHECK
+        (
+            TYPE = "Short-term" OR TYPE = "Long-term"
+        ),
         Prime DECIMAL(10, 2)
     CHECK
         (Prime >= 0),
