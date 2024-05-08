@@ -33,7 +33,11 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         (Account_Number >= 0),
         Open_Date DATE,
         Balance DECIMAL(10, 2),
-        Account_Type VARCHAR(50),
+        Account_Type VARCHAR(50)
+    CHECK
+        (
+            Account_Type = "Savings" OR Account_Type = "Business" OR Account_Type = "Checking"
+        ),
         Client_ID VARCHAR(50),
         Bank_ID VARCHAR(50),
         FOREIGN KEY(Client_ID) REFERENCES CLIENT(ID),
