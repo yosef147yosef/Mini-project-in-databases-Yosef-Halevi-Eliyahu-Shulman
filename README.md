@@ -80,15 +80,25 @@ Description: Represents the interest rates associated with deposits.
 Description: Each deposit is associated with one account.
 Foreign Key: Account Number in the Deposit entity.
 
-### Worker to Bank (One-to-Many)
+### Client to Account (One-to-Many)
 
-Description: Each worker is employed by one bank.
-Foreign Key: Bank ID in the Worker entity.
+Description: Each client can have multiple accounts.
+Foreign Key: Client ID in the Account entity.
+
+### Worker to Bank (Many-to-Many)
+
+Description: Represents the association between workers and banks.
+Foreign Keys: Worker ID and Bank ID.
 
 ### Interest Rate to Deposit (One-to-Many)
 
 Description: Each deposit is associated with one interest rate.
 Foreign Key: Interest Rate ID in the Deposit entity.
+
+### Deposit to Worker (Many-to-Many)
+
+Description: Represents the association between deposits and workers.
+Foreign Keys: Deposit ID and Worker ID.
 
 ## Weak Entity
 
@@ -100,5 +110,6 @@ Description: Represents the deposits made by clients into their accounts.
 - Deposit ID: (Type: Integer or String)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
+
 
 
