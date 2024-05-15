@@ -83,3 +83,21 @@ CREATE TABLE IF NOT EXISTS Deposit(
         FOREIGN KEY(Account_Number) REFERENCES ACCOUNT(Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID)
 );
+CREATE TABLE IF NOT EXISTS works_in(
+    Bank_ID VARCHAR(50) CHECK
+        (Bank_ID >= 0),
+    ID VARCHAR(50) CHECK
+        (ID >= 0),
+    FOREIGN KEY (Bank_ID) REFERENCES Bank(Bank_ID),
+    FOREIGN KEY (ID) REFERENCES Worker(ID),
+    PRIMARY KEY(Bank_ID,ID)
+);
+CREATE TABLE IF NOT EXISTS responsible(
+    Deposit_ID VARCHAR(50) CHECK
+        (Deposit_ID >= 0),
+    ID VARCHAR(50) CHECK
+        (ID >= 0),
+    FOREIGN KEY (Deposit_ID) REFERENCES Deposit(Deposit_ID),
+    FOREIGN KEY (ID) REFERENCES Worker(ID),
+    PRIMARY KEY(Deposit_ID,ID)
+);
