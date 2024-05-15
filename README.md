@@ -9,7 +9,6 @@ This department oversees the opening, maintenance, and servicing of deposit acco
 ![WhatsApp Image 2024-05-07 at 19 46 01_4b6fc5b4](https://github.com/yosef147yosef/Mini-project-in-databases/assets/128507240/66d66744-76a7-41a5-8f9c-378687efc2b0)
 
 ## Entities:
-
 # Entity Description
 
 This repository contains descriptions of entities in a system.
@@ -18,7 +17,7 @@ This repository contains descriptions of entities in a system.
 
 ### Client
 
-Represents the clients or customers in the system.
+Description: Represents the clients or customers in your system.
 
 **Attributes:**
 - Name: (Type: String)
@@ -29,7 +28,7 @@ Represents the clients or customers in the system.
 
 ### Account
 
-Represents the accounts held by clients.
+Description: Represents the accounts held by clients.
 
 **Attributes:**
 - Account Number: (Type: Integer or String)
@@ -39,7 +38,7 @@ Represents the accounts held by clients.
 
 ### Bank
 
-Represents the banks where accounts are held.
+Description: Represents the banks where accounts are held.
 
 **Attributes:**
 - Bank ID: (Type: Integer or String)
@@ -49,7 +48,7 @@ Represents the banks where accounts are held.
 
 ### Worker
 
-Represents the workers or employees associated with banks.
+Description: Represents the workers or employees associated with banks.
 
 **Attributes:**
 - Name: (Type: String)
@@ -57,7 +56,7 @@ Represents the workers or employees associated with banks.
 
 ### Deposit
 
-Represents the deposits made by clients into their accounts.
+Description: Represents the deposits made by clients into their accounts.
 
 **Attributes:**
 - Deposit ID: (Type: Integer or String)
@@ -66,10 +65,40 @@ Represents the deposits made by clients into their accounts.
 
 ### Interest Rate
 
-Represents the interest rates associated with deposits.
+Description: Represents the interest rates associated with deposits.
 
 **Attributes:**
 - Benefits: (Type: String)
 - Type: (Type: String)
 - Prime: (Type: Numeric)
 - Interest: (Type: Numeric)
+
+## Connections
+
+### Deposit to Account (One-to-Many)
+
+Description: Each deposit is associated with one account.
+Foreign Key: Account Number in the Deposit entity.
+
+### Worker to Bank (One-to-Many)
+
+Description: Each worker is employed by one bank.
+Foreign Key: Bank ID in the Worker entity.
+
+### Interest Rate to Deposit (One-to-Many)
+
+Description: Each deposit is associated with one interest rate.
+Foreign Key: Interest Rate ID in the Deposit entity.
+
+## Weak Entity
+
+### Deposit
+
+Description: Represents the deposits made by clients into their accounts.
+
+**Attributes:**
+- Deposit ID: (Type: Integer or String)
+- Deposit Date: (Type: Date)
+- Amount: (Type: Numeric)
+
+
