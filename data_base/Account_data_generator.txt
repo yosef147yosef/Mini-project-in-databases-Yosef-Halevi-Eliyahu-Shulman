@@ -3,7 +3,7 @@ Command: =CONCATENATE(ROW()-1)
 Description: Generates unique account numbers for each row.
 
 Attribute: Open_Date
-Command: =TODAY()-RANDBETWEEN(1,365)
+Command: ==TEXT(RANDBETWEEN(1900, 2024), "0000") & "-" & TEXT(RANDBETWEEN(1, 12), "00") & "-" & TEXT(RANDBETWEEN(1, 31), "00")
 Description: Generates a random open date within the last year for each account.
 
 Attribute: Balance
