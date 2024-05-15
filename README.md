@@ -10,73 +10,66 @@ This department oversees the opening, maintenance, and servicing of deposit acco
 
 ## Entities:
 
-1. **Client:**
-   - Description: Represents the clients or customers in your system.
-   - Attributes:
-     - Name: (Type: String)
-     - ID: (Type: Integer or String)
-     - Address: (Type: String)
-     - Phone Number: (Type: String)
-     - Email: (Type: String)
+# Entity Description
 
-2. **Account:**
-   - Description: Represents the accounts held by clients.
-   - Attributes:
-     - Account Number: (Type: Integer or String)
-     - Open Date: (Type: Date)
-     - Balance: (Type: Numeric)
-     - Account Type: (Type: String)
+This repository contains descriptions of entities in a system.
 
-3. **Bank:**
-   - Description: Represents the banks where accounts are held.
-   - Attributes:
-     - Bank ID: (Type: Integer or String)
-     - Name: (Type: String)
-     - Address: (Type: String)
-     - Phone Number: (Type: String)
+## Entities Description
 
-4. **Worker:**
-   - Description: Represents the workers or employees associated with banks.
-   - Attributes:
-     - Name: (Type: String)
-     - ID: (Type: Integer or String)
+### Client
 
-5. **Deposit:**
-   - Description: Represents the deposits made by clients into their accounts.
-   - Attributes:
-     - Deposit ID: (Type: Integer or String)
-     - Deposit Date: (Type: Date)
-     - Amount: (Type: Numeric)
+Represents the clients or customers in the system.
 
-6. **Interest Rate:**
-   - Description: Represents the interest rates associated with deposits.
-   - Attributes:
-     - Benefits: (Type: String)
-     - Type: (Type: String)
-     - Prime: (Type: Numeric)
-     - Interest: (Type: Numeric)
+**Attributes:**
+- Name: (Type: String)
+- ID: (Type: Integer or String)
+- Address: (Type: String)
+- Phone Number: (Type: String)
+- Email: (Type: String)
 
-## Connections:
+### Account
 
-- **Deposit to Account (One-to-Many):**
-  - Description: Each deposit is associated with one account.
-  - Foreign Key: Account Number in the Deposit entity.
+Represents the accounts held by clients.
 
-- **Worker to Bank (One-to-Many):**
-  - Description: Each worker is employed by one bank.
-  - Foreign Key: Bank ID in the Worker entity.
+**Attributes:**
+- Account Number: (Type: Integer or String)
+- Open Date: (Type: Date)
+- Balance: (Type: Numeric)
+- Account Type: (Type: String)
 
-- **Interest Rate to Deposit (One-to-Many):**
-  - Description: Each deposit is associated with one interest rate.
-  - Foreign Key: Interest Rate ID in the Deposit entity.
+### Bank
 
-## Weak Entity:
+Represents the banks where accounts are held.
 
-- **Deposit:**
-   - Description: Represents the deposits made by clients into their accounts.
-   - Attributes:
-     - Deposit ID: (Type: Integer or String)
-     - Deposit Date: (Type: Date)
-     - Amount: (Type: Numeric)
-     
+**Attributes:**
+- Bank ID: (Type: Integer or String)
+- Name: (Type: String)
+- Address: (Type: String)
+- Phone Number: (Type: String)
 
+### Worker
+
+Represents the workers or employees associated with banks.
+
+**Attributes:**
+- Name: (Type: String)
+- ID: (Type: Integer or String)
+
+### Deposit
+
+Represents the deposits made by clients into their accounts.
+
+**Attributes:**
+- Deposit ID: (Type: Integer or String)
+- Deposit Date: (Type: Date)
+- Amount: (Type: Numeric)
+
+### Interest Rate
+
+Represents the interest rates associated with deposits.
+
+**Attributes:**
+- Benefits: (Type: String)
+- Type: (Type: String)
+- Prime: (Type: Numeric)
+- Interest: (Type: Numeric)
