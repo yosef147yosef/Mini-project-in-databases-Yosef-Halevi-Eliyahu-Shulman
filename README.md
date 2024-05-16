@@ -103,5 +103,13 @@ Foreign Key: Interest Rate ID in the Deposit entity.
 Each account is in exactly one bank.
 Foreign Key: Bank ID in the Account entity.
 
+## Weak Entities
 
+### Account
+Account is a weak entity that is not fully defined without the entity Bank.
+It gets an attribute of Bank ID as part of its primary key.
+
+### Deposit
+Deposit is a weak entity that is not fully defined without the entity Interest Rate.
+It gets an attribute of Interes Rate ID as part of its primary key.
 
