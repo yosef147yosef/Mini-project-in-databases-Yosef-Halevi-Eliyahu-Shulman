@@ -3,7 +3,7 @@
 The Deposits Department is responsible for managing all aspects related to deposit accounts within the bank.
 This department oversees the opening, maintenance, and servicing of deposit accounts, which may include savings accounts, checking accounts, and certificates of deposit (CDs).
 # Entity-Relationship Diagram (ERD)
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/128507240/fd2d8e3e-e683-4aba-99a0-21edd940d4a4)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/3bdc9b9e-a508-4f77-8973-f64e41560274)
 
 # Data Structure Diagram (DSD)
 ![WhatsApp Image 2024-05-07 at 19 46 01_4b6fc5b4](https://github.com/yosef147yosef/Mini-project-in-databases/assets/128507240/66d66744-76a7-41a5-8f9c-378687efc2b0)
