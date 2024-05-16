@@ -9,43 +9,37 @@ This department oversees the opening, maintenance, and servicing of deposit acco
 ![WhatsApp Image 2024-05-07 at 19 46 01_4b6fc5b4](https://github.com/yosef147yosef/Mini-project-in-databases/assets/128507240/66d66744-76a7-41a5-8f9c-378687efc2b0)
 
 ## Entities:
-# Entity Description
-
-This repository contains descriptions of entities in a system.
-
-## Entities Description
-
 
 ### Bank
 
-Description: Represents the banks where accounts are held.
+Represents the banks where accounts are held.
 
 **Attributes:**
-- Bank_ID: (Type: Integer)
+- **Primary Key** Bank_ID: (Type: Integer)
 - Name: (Type: String)
 - Address: (Type: String)
 - Phone_Number: (Type: String)
 
 ### Account
 
-Description: Represents the accounts in the banks.
+Represents the accounts in the banks.
 
 **Attributes:**
-- Account_Number: (Type: Integer or String)
+- **Primary Key** Account_Number: (Type: Integer or String)
+- **Primary Key** Bank_ID: (Type: Integer)
 - Open_Date: (Type: Date)
 - Balance: (Type: Numeric)
 - Account_Type: (Type: String)
-- Bank_ID: (Type: Integer)
 - Client_ID: (Type: Integer)
 
 
 ### Client
 
-Description: Represents the clients of the accounts.
+Represents the clients of the accounts.
 
 **Attributes:**
+- **Primary Key** ID: (Type: Integer)
 - Name: (Type: String)
-- ID: (Type: Integer)
 - Address: (Type: String)
 - Phone_Number: (Type: String)
 - Email: (Type: String)
@@ -53,33 +47,35 @@ Description: Represents the clients of the accounts.
 
 ### Deposit
 
-Description: Represents the deposits in an account.
+Represents the deposits in an account.
 
 **Attributes:**
-- Deposit ID: (Type: Integer or String)
+- **Primary Key** Deposit ID: (Type: Integer or String)
+- **Primary Key** Interest_Rate_ID: (Type: Integer)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
-- Interest_Rate_ID: (Type: Integer)
 - Account_Number: (Type: Integer)
 
 ### Interest Rate
 
-Description: Represents the interest rates associated with deposits.
+Represents the interest rates associated with deposits.
 
 **Attributes:**
+- **Primary Key** Interest_Rate_ID (Type: Integer)
 - Benefits: (Type: String)
 - Type: (Type: String)
 - Prime: (Type: Numeric)
 - Interest: (Type: Numeric)
-- Interest_Rate_ID (Type: Integer)
+
   
 ### Worker
 
-Description: Represents the workers that work in the banks responsible for deposits.
+Represents the workers that work in the banks responsible for deposits.
 
 **Attributes:**
+- **Primary Key** ID: (Type: Integer)
 - Name: (Type: String)
-- ID: (Type: Integer)
+
 
 
 ## Connections
