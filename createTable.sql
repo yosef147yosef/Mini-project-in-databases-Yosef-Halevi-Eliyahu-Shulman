@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS Bank(
 );
 -- Create Account table
 CREATE TABLE IF NOT EXISTS ACCOUNT(
-    Account_Number VARCHAR(50) PRIMARY KEY CHECK
+    Account_Number VARCHAR(50) CHECK
         (Account_Number >= 0),
         Open_Date DATE,
         Balance DECIMAL(10, 2),
@@ -41,7 +41,8 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         Client_ID VARCHAR(50),
         Bank_ID VARCHAR(50),
         FOREIGN KEY(Client_ID) REFERENCES CLIENT(ID),
-        FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID)
+        FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID),
+    	PRIMARY KEY (Bank_ID,Client_ID)
 );
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
@@ -74,14 +75,15 @@ CREATE TABLE IF NOT EXISTS Interest_Rate(
 );
 -- Create Deposit table
 CREATE TABLE IF NOT EXISTS Deposit(
-    Deposit_ID VARCHAR(50) PRIMARY KEY CHECK
+    Deposit_ID VARCHAR(50) CHECK
         (Deposit_ID >= 0),
         Deposit_Date DATE,
         Amount DECIMAL(10, 2),
         Account_Number VARCHAR(50),
         Interest_Rate_ID VARCHAR(50),
         FOREIGN KEY(Account_Number) REFERENCES ACCOUNT(Account_Number),
-        FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID)
+        FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
+    	PRIMARY KEY(Deposit_ID,Interest_Rate_ID)
 );
 CREATE TABLE IF NOT EXISTS works_in(
     Bank_ID VARCHAR(50) CHECK
