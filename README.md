@@ -18,7 +18,7 @@ Represents the banks where accounts are held.
 - **Primary Key** Bank_ID: (Type: Integer)
 - Name: (Type: String)
 - Address: (Type: String)
-- Phone_Number: (Type: String)
+- Phone Number: (Type: String)
 
 ### Account
 
@@ -27,10 +27,10 @@ Represents the accounts in the banks.
 **Attributes:**
 - **Primary Key** Account_Number: (Type: Integer or String)
 - **Primary Key** Bank_ID: (Type: Integer)
-- Open_Date: (Type: Date)
+- Open Date: (Type: Date)
 - Balance: (Type: Numeric)
-- Account_Type: (Type: String)
-- Client_ID: (Type: Integer)
+- Account Type: (Type: String)
+- Client ID: (Type: Integer)
 
 
 ### Client
@@ -41,9 +41,16 @@ Represents the clients of the accounts.
 - **Primary Key** ID: (Type: Integer)
 - Name: (Type: String)
 - Address: (Type: String)
-- Phone_Number: (Type: String)
+- Phone Number: (Type: String)
 - Email: (Type: String)
 
+### Worker
+
+Represents the workers that are responsible for deposits.
+
+**Attributes:**
+- **Primary Key** ID: (Type: Integer)
+- Name: (Type: String)
 
 ### Deposit
 
@@ -54,7 +61,8 @@ Represents the deposits in an account.
 - **Primary Key** Interest_Rate_ID: (Type: Integer)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
-- Account_Number: (Type: Integer)
+- Account Number: (Type: Integer)
+- Worker ID: (Type: Integer)
 
 ### Interest Rate
 
@@ -68,13 +76,7 @@ Represents the interest rates associated with deposits.
 - Interest: (Type: Numeric)
 
   
-### Worker
 
-Represents the workers that work in the banks responsible for deposits.
-
-**Attributes:**
-- **Primary Key** ID: (Type: Integer)
-- Name: (Type: String)
 
 
 
