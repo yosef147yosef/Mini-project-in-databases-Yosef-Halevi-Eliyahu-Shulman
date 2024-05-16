@@ -15,7 +15,7 @@ This department oversees the opening, maintenance, and servicing of deposit acco
 Represents the banks where accounts are held.
 
 **Attributes:**
-- **Primary Key** Bank_ID: (Type: Integer)
+- **Primary Key** Bank ID: (Type: Integer)
 - Name: (Type: String)
 - Address: (Type: String)
 - Phone Number: (Type: String)
@@ -25,8 +25,8 @@ Represents the banks where accounts are held.
 Represents the accounts in the banks.
 
 **Attributes:**
-- **Primary Key** Account_Number: (Type: Integer or String)
-- **Primary Key** Bank_ID: (Type: Integer)
+- **Primary Key** Account Number: (Type: Integer or String)
+- **Primary Key** Bank ID: (Type: Integer)
 - Open Date: (Type: Date)
 - Balance: (Type: Numeric)
 - Account Type: (Type: String)
@@ -58,7 +58,7 @@ Represents the deposits in an account.
 
 **Attributes:**
 - **Primary Key** Deposit ID: (Type: Integer or String)
-- **Primary Key** Interest_Rate_ID: (Type: Integer)
+- **Primary Key** Interest Rate ID: (Type: Integer)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
 - Account Number: (Type: Integer)
@@ -69,17 +69,13 @@ Represents the deposits in an account.
 Represents the interest rates associated with deposits.
 
 **Attributes:**
-- **Primary Key** Interest_Rate_ID (Type: Integer)
+- **Primary Key** Interest Rate ID (Type: Integer)
 - Benefits: (Type: String)
 - Type: (Type: String)
 - Prime: (Type: Numeric)
 - Interest: (Type: Numeric)
 
   
-
-
-
-
 ## Connections
 
 ### Deposit to Account (One-to-Many)
