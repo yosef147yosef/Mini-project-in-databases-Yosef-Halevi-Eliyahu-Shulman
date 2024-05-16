@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         Bank_ID VARCHAR(50),
         FOREIGN KEY(Client_ID) REFERENCES CLIENT(ID),
         FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID),
-    	PRIMARY KEY (Bank_ID,Account_Number)
+    	PRIMARY KEY (Bank_ID,Client_ID)
 );
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS Interest_Rate(
         Benefits VARCHAR(255)
     CHECK
         (
-            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Soldier" OR Benefits = "Student"
+            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Solider" OR Benefits = "Student"
         ),
         TYPE VARCHAR(50)
     CHECK
@@ -81,8 +81,7 @@ CREATE TABLE IF NOT EXISTS Deposit(
         Amount DECIMAL(10, 2),
         Account_Number VARCHAR(50),
         Interest_Rate_ID VARCHAR(50),
-    	Bank_ID VARCHAR(50),
-        FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
+        FOREIGN KEY(Account_Number) REFERENCES ACCOUNT(Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
     	PRIMARY KEY(Deposit_ID,Interest_Rate_ID)
 );
