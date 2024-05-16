@@ -81,6 +81,7 @@ CREATE TABLE IF NOT EXISTS Deposit(
         Amount DECIMAL(10, 2),
         Account_Number VARCHAR(50),
         Interest_Rate_ID VARCHAR(50),
+    	Bank_ID VARCHAR(50),
         FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
     	PRIMARY KEY(Deposit_ID,Interest_Rate_ID)
