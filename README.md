@@ -1,4 +1,4 @@
-# Mini-project-in-databases
+# Mini Project In Databases
 # Deposits Department:
 The Deposits Department is responsible for managing all aspects related to deposit accounts within the bank.
 This department oversees the opening, maintenance, and servicing of deposit accounts, which may include savings accounts, checking accounts, and certificates of deposit (CDs).
