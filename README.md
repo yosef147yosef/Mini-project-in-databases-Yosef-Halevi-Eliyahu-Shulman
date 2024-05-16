@@ -15,53 +15,52 @@ This repository contains descriptions of entities in a system.
 
 ## Entities Description
 
-### Client
-
-Description: Represents the clients or customers in your system.
-
-**Attributes:**
-- Name: (Type: String)
-- ID: (Type: Integer or String)
-- Address: (Type: String)
-- Phone Number: (Type: String)
-- Email: (Type: String)
-
-### Account
-
-Description: Represents the accounts held by clients.
-
-**Attributes:**
-- Account Number: (Type: Integer or String)
-- Open Date: (Type: Date)
-- Balance: (Type: Numeric)
-- Account Type: (Type: String)
 
 ### Bank
 
 Description: Represents the banks where accounts are held.
 
 **Attributes:**
-- Bank ID: (Type: Integer or String)
+- Bank_ID: (Type: Integer)
 - Name: (Type: String)
 - Address: (Type: String)
-- Phone Number: (Type: String)
+- Phone_Number: (Type: String)
 
-### Worker
+### Account
 
-Description: Represents the workers or employees associated with banks.
+Description: Represents the accounts in the banks.
+
+**Attributes:**
+- Account_Number: (Type: Integer or String)
+- Open_Date: (Type: Date)
+- Balance: (Type: Numeric)
+- Account_Type: (Type: String)
+- Bank_ID: (Type: Integer)
+- Client_ID: (Type: Integer)
+
+
+### Client
+
+Description: Represents the clients of the accounts.
 
 **Attributes:**
 - Name: (Type: String)
-- ID: (Type: Integer or String)
+- ID: (Type: Integer)
+- Address: (Type: String)
+- Phone_Number: (Type: String)
+- Email: (Type: String)
+
 
 ### Deposit
 
-Description: Represents the deposits made by clients into their accounts.
+Description: Represents the deposits in an account.
 
 **Attributes:**
 - Deposit ID: (Type: Integer or String)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
+- Interest_Rate_ID: (Type: Integer)
+- Account_Number: (Type: Integer)
 
 ### Interest Rate
 
@@ -72,6 +71,16 @@ Description: Represents the interest rates associated with deposits.
 - Type: (Type: String)
 - Prime: (Type: Numeric)
 - Interest: (Type: Numeric)
+- Interest_Rate_ID (Type: Integer)
+  
+### Worker
+
+Description: Represents the workers that work in the banks responsible for deposits.
+
+**Attributes:**
+- Name: (Type: String)
+- ID: (Type: Integer)
+
 
 ## Connections
 
