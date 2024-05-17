@@ -52,6 +52,7 @@ Represents the workers that are responsible for deposits.
 **Attributes:**
 - **Primary Key** ID: (Type: Integer)
 - Name: (Type: String)
+- Bank ID (Type: Integer)
 
 ### Deposit
 
@@ -79,30 +80,35 @@ Represents the interest rates associated with deposits.
   
 ## Connections
 
-### Account to Deposit (One-to-Many)
+### In: Account to Deposit (One-to-Many)
 
 Each deposit is associated with exactly one account.
 Foreign Key: Account Number in the Deposit entity.
 
-### Client to Account (One-to-Many)
+### Has: Client to Account (One-to-Many)
 
 Each account has is owned by exactly one client.
 Foreign Key: Client ID in the Account entity.
 
-### Worker to Deposit (One-to-Many)
+### Responsible: Worker to Deposit (One-to-Many)
 
-Each deposit has exactly one worker that works on it.
+Each deposit has exactly one worker that is responsible for it.
 Foreign Keys: Worker ID in the Deposit entity.
 
-### Interest Rate to Deposit (One-to-Many)
+### Has: Interest Rate to Deposit (One-to-Many)
 
 Each deposit has exactly one interest rate.
 Foreign Key: Interest Rate ID in the Deposit entity.
 
-### Bank to Account (One-to-Many)
+### In: Bank to Account (One-to-Many)
 
 Each account is in exactly one bank.
 Foreign Key: Bank ID in the Account entity.
+
+### Works In: Bank to Worker (One-to-Many)
+
+Each worker works in exactly one bank.
+Foreign Key: Bank ID in the Worker entity.
 
 ## Weak Entities
 
