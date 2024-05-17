@@ -64,6 +64,7 @@ Represents the deposits in an account.
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
 - Account Number: (Type: Integer)
+- Bank ID: (Type: Integer)
 - Worker ID: (Type: Integer)
 
 ### Interest Rate
