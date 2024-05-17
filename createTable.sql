@@ -50,7 +50,9 @@ CREATE TABLE IF NOT EXISTS Worker(
         (ID >= 0),
         NAME VARCHAR(255)
     CHECK
-        (NAME NOT REGEXP '[0-9]')
+        (NAME NOT REGEXP '[0-9]'),
+    Bank_ID VARCHAR(50),
+    FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID)
 );
 -- Create Interest Rate table
 CREATE TABLE IF NOT EXISTS Interest_Rate(
