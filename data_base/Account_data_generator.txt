@@ -3,7 +3,7 @@ Command: =CONCATENATE(ROW()-1)
 Description: Generates unique account numbers for each row.
 
 Attribute: Open_Date
-Command: ==TEXT(RANDBETWEEN(1900, 2024), "0000") & "-" & TEXT(RANDBETWEEN(1, 12), "00") & "-" & TEXT(RANDBETWEEN(1, 31), "00")
+Command: =TEXT(RANDBETWEEN(1900, 2024), "0000") & "-" & TEXT(RANDBETWEEN(1, 12), "00") & "-" & TEXT(RANDBETWEEN(1, 31), "00")
 Description: Generates a random open date within the last year for each account.
 
 Attribute: Balance
@@ -15,9 +15,9 @@ Command: =CHOOSE(RANDBETWEEN(1,3), "Savings", "Business", "Checking")
 Description: Randomly selects an account type (Savings, Business, or Checking) for each account.
 
 Attribute: Client_ID
-Command: =INDEX(Client.xlsx!$A:$A, RANDBETWEEN(2,COUNTA(Client.xlsx!$A:$A)))
+Command: =IFERROR(INDEX(Client.xlsx!$A:$A, MATCH(0, COUNTIF($A$1:A1, Client.xlsx!$A:$A), 0)), "")
 Description: Selects a random client ID from the Client.xlsx file for each account.
 
 Attribute: Bank_ID
-Command: =INDEX(Bank.xlsx!$A:$A, RANDBETWEEN(2,COUNTA(Bank.xlsx!$A:$A)))
+Command: =IFERROR(INDEX(INDIRECT("'"&A1&"Sheet1'!$A:$A"), MATCH(0, COUNTIF($A$1:A1, INDIRECT("'"&A1&"Sheet1'!$A:$A")), 0)), "")
 Description: Selects a random bank ID from the Bank.xlsx file for each account.
