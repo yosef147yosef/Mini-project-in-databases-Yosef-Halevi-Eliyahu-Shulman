@@ -4,7 +4,7 @@ USE
     bank_deposit;
     -- Create Client table
 CREATE TABLE IF NOT EXISTS CLIENT(
-    ID VARCHAR(50) PRIMARY KEY CHECK
+    Client_ID VARCHAR(50) PRIMARY KEY CHECK
         (ID >= 0),
         NAME VARCHAR(255)
     CHECK
@@ -40,13 +40,13 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         ),
         Client_ID VARCHAR(50),
         Bank_ID VARCHAR(50),
-        FOREIGN KEY(Client_ID) REFERENCES CLIENT(ID),
+        FOREIGN KEY(Client_ID) REFERENCES CLIENT(Client_ID),
         FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID),
     	PRIMARY KEY (Bank_ID,Account_Number)
 );
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
-    ID VARCHAR(50) PRIMARY KEY CHECK
+    Worker_ID VARCHAR(50) PRIMARY KEY CHECK
         (ID >= 0),
         NAME VARCHAR(255)
     CHECK
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS Deposit(
         Interest_Rate_ID VARCHAR(50),
     	Bank_ID VARCHAR(50),
     	Worker_ID VARCHAR(50),
-    	FOREIGN KEY (Worker_ID) REFERENCES Worker(ID),
+    	FOREIGN KEY (Worker_ID) REFERENCES Worker(Worker_ID),
         FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
     	PRIMARY KEY(Deposit_ID,Interest_Rate_ID)
