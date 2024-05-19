@@ -1,0 +1,201 @@
+Interest_Rate_ID,Benefits,Type,Prime,Interest
+001,Long-Term Customer,Long-term,6.91,4.14
+002,Student,Long-term,1.59,1.28
+003,None,Long-term,6.55,5.14
+004,Long-Term Customer,Short-term,4.25,9.26
+005,None,Short-term,3.89,9.11
+006,None,Long-term,6.16,5.08
+007,Soldier,Short-term,8.05,9.73
+008,Soldier,Long-term,3.8,6.25
+009,Student,Long-term,2.46,1.08
+010,Student,Long-term,5.08,8.05
+011,Soldier,Long-term,5.24,0.65
+012,Long-Term Customer,Short-term,4.61,7.43
+013,Student,Short-term,6.38,8.83
+014,Student,Long-term,2.19,2.68
+015,Student,Long-term,6.98,0.16
+016,Soldier,Short-term,6.2,1.73
+017,Student,Long-term,8.79,0.51
+018,Student,Short-term,3.49,5.82
+019,None,Long-term,1.23,8.38
+020,Soldier,Long-term,9.93,3.48
+021,Long-Term Customer,Short-term,4.45,2.22
+022,Student,Long-term,9.42,2.89
+023,Soldier,Short-term,2.7,2.24
+024,Student,Long-term,6.63,7.02
+025,Student,Short-term,2.12,0.02
+026,Long-Term Customer,Short-term,4.19,1.54
+027,None,Short-term,9.12,2.17
+028,None,Short-term,8.18,8.75
+029,None,Short-term,3.97,0.08
+030,Student,Short-term,7.47,0.28
+031,Soldier,Short-term,2.63,7.36
+032,Soldier,Short-term,7.64,1.64
+033,Soldier,Long-term,3.07,5.8
+034,Student,Long-term,9.92,7.28
+035,Long-Term Customer,Short-term,2.64,8.22
+036,Long-Term Customer,Short-term,7.34,6.14
+037,Long-Term Customer,Long-term,5.58,5.05
+038,Long-Term Customer,Long-term,5.07,6.3
+039,Soldier,Short-term,0.55,7.26
+040,Student,Long-term,4.06,6.28
+041,None,Short-term,2.68,4.93
+042,Soldier,Short-term,4.49,4.1
+043,Soldier,Long-term,0.07,6.01
+044,None,Short-term,5.67,0.99
+045,None,Short-term,8.83,7.3
+046,Long-Term Customer,Long-term,6.09,0.3
+047,Student,Long-term,4.77,4.84
+048,Long-Term Customer,Short-term,1.87,0.24
+049,Soldier,Short-term,2.24,3.78
+050,Soldier,Long-term,7.89,1.85
+051,Soldier,Long-term,4.53,3.21
+052,None,Short-term,5.15,7.98
+053,Long-Term Customer,Long-term,3.49,7.27
+054,Long-Term Customer,Long-term,5.82,1.17
+055,Student,Short-term,7.56,8.87
+056,Soldier,Short-term,9.91,4.1
+057,Soldier,Long-term,5.09,4.89
+058,Student,Short-term,2.22,4.97
+059,Student,Long-term,6.81,1.97
+060,Long-Term Customer,Long-term,6.45,1.83
+061,Student,Long-term,3.04,7.38
+062,Student,Short-term,4.11,5.12
+063,Long-Term Customer,Long-term,8.4,8.77
+064,Soldier,Long-term,1.92,1.02
+065,Student,Long-term,1.13,8.43
+066,None,Short-term,5.45,3.97
+067,Soldier,Long-term,1.49,8
+068,Long-Term Customer,Long-term,2.97,4.57
+069,Soldier,Long-term,1.74,7.89
+070,Student,Short-term,1.48,9.28
+071,Long-Term Customer,Long-term,9.67,7.8
+072,Student,Short-term,8.67,4.8
+073,None,Long-term,4.46,4.38
+074,None,Long-term,6.94,0.38
+075,Long-Term Customer,Short-term,6.24,5.14
+076,None,Short-term,8.92,7.86
+077,Soldier,Long-term,3.41,9.57
+078,Long-Term Customer,Short-term,2.35,2.36
+079,Soldier,Short-term,3.02,4.44
+080,Student,Short-term,6.58,0.71
+081,Long-Term Customer,Short-term,5.99,6.78
+082,Student,Long-term,4.73,0.19
+083,Long-Term Customer,Short-term,2.86,6.8
+084,Student,Long-term,0.48,3.25
+085,None,Short-term,6.9,2.76
+086,Long-Term Customer,Long-term,3.14,1.04
+087,Long-Term Customer,Short-term,3.42,9.58
+088,Long-Term Customer,Long-term,1.43,8.01
+089,Long-Term Customer,Short-term,6.91,2.26
+090,None,Long-term,4.75,4.25
+091,Student,Long-term,6.29,9.31
+092,Long-Term Customer,Short-term,1.49,5.65
+093,Soldier,Long-term,9.48,3.78
+094,None,Long-term,3.24,8.5
+095,Long-Term Customer,Short-term,3.46,3.37
+096,Student,Short-term,5.71,4.72
+097,Soldier,Long-term,10,6.13
+098,Soldier,Short-term,7.12,7.18
+099,Soldier,Short-term,7.13,9.99
+100,None,Short-term,7.13,5.27
+101,None,Long-term,8,5.75
+102,None,Short-term,9.08,6.08
+103,Long-Term Customer,Long-term,0,5.21
+104,None,Short-term,7.37,9.14
+105,Student,Short-term,6.86,6.1
+106,Long-Term Customer,Short-term,9.2,1.55
+107,Long-Term Customer,Long-term,5.58,2.72
+108,None,Long-term,7.32,0.72
+109,Long-Term Customer,Short-term,0.94,6.73
+110,Soldier,Short-term,1.46,7.78
+111,Long-Term Customer,Long-term,4.3,5.6
+112,None,Short-term,9.19,2.76
+113,Student,Short-term,2.46,3.64
+114,Soldier,Short-term,4.77,5.39
+115,Soldier,Short-term,7.28,5.66
+116,None,Short-term,7.9,4.2
+117,Long-Term Customer,Long-term,3.35,2.15
+118,None,Long-term,6.25,3.89
+119,Student,Short-term,6.32,5.83
+120,Long-Term Customer,Long-term,7.26,6.77
+121,Student,Long-term,7.45,2.84
+122,Student,Short-term,5.77,7.15
+123,Long-Term Customer,Short-term,9.63,4.49
+124,Long-Term Customer,Short-term,7.43,3.58
+125,Long-Term Customer,Short-term,9.38,9.77
+126,Long-Term Customer,Long-term,1.18,8.61
+127,Long-Term Customer,Short-term,0.7,4.79
+128,Student,Long-term,9.04,6.73
+129,Soldier,Long-term,1.88,7.09
+130,Student,Long-term,3.71,1.14
+131,Student,Long-term,9.03,1.1
+132,None,Long-term,3.08,5.53
+133,Soldier,Short-term,6.15,6.49
+134,Soldier,Long-term,7.55,8.26
+135,Soldier,Long-term,8.18,5.3
+136,Soldier,Short-term,2.36,0.51
+137,Student,Short-term,9.91,1.16
+138,Long-Term Customer,Short-term,9,6.05
+139,None,Long-term,6.49,6.94
+140,Soldier,Long-term,5.1,0.59
+141,Long-Term Customer,Short-term,8.24,4.48
+142,Student,Short-term,2.92,3.57
+143,Long-Term Customer,Short-term,3.72,2.65
+144,Student,Short-term,3.69,0.98
+145,Long-Term Customer,Short-term,5.81,5.64
+146,Student,Long-term,3.36,9.56
+147,None,Long-term,9.63,4.46
+148,None,Short-term,9.21,3.23
+149,Student,Short-term,0.91,2.32
+150,None,Long-term,1.05,6.56
+151,Long-Term Customer,Long-term,1,0.39
+152,Soldier,Short-term,1.63,3.42
+153,Student,Long-term,2.13,7.21
+154,Long-Term Customer,Long-term,8.08,2.83
+155,Student,Short-term,0.1,2.98
+156,Soldier,Short-term,0.33,5.4
+157,Student,Long-term,6.41,1.21
+158,Soldier,Long-term,1.64,6.06
+159,Student,Short-term,9.09,9.97
+160,Soldier,Short-term,6.28,2.79
+161,Long-Term Customer,Short-term,9.67,5.57
+162,Soldier,Short-term,6.39,1.66
+163,Long-Term Customer,Short-term,8.71,1.04
+164,None,Short-term,3.2,6.38
+165,Soldier,Long-term,7.87,0.39
+166,Long-Term Customer,Long-term,6.39,9.85
+167,Soldier,Long-term,2.41,0.55
+168,Soldier,Long-term,2.55,4.67
+169,Student,Long-term,1.8,2.45
+170,None,Short-term,3.15,4.28
+171,Student,Long-term,7.13,3.99
+172,Long-Term Customer,Long-term,4.08,7.14
+173,Long-Term Customer,Long-term,9.5,3.53
+174,Long-Term Customer,Long-term,7.3,9.97
+175,Student,Long-term,6.41,7.88
+176,Soldier,Long-term,8.65,0.28
+177,Student,Long-term,1.51,3.16
+178,Student,Short-term,3.4,6.16
+179,None,Short-term,0.13,7.23
+180,Student,Long-term,6.32,9.67
+181,None,Long-term,1.28,5.56
+182,None,Short-term,2.76,7.91
+183,Student,Short-term,1.99,1.61
+184,None,Short-term,5.25,7.74
+185,Soldier,Short-term,5.47,4.31
+186,Student,Short-term,9.15,9.75
+187,Soldier,Short-term,4.33,6.82
+188,None,Short-term,4.55,3.84
+189,Student,Short-term,7.18,2.95
+190,Student,Long-term,5,4.41
+191,None,Short-term,0.46,5.57
+192,None,Long-term,4.99,0.54
+193,None,Long-term,8.98,5.55
+194,None,Long-term,0.75,2.96
+195,None,Short-term,4.4,2.74
+196,Long-Term Customer,Long-term,7.95,5.1
+197,Soldier,Long-term,6.39,9.01
+198,Student,Short-term,3.5,5.65
+199,Soldier,Long-term,6.16,7.39
+200,Student,Long-term,6.11,5.6
