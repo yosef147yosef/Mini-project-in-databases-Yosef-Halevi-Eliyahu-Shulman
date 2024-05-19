@@ -52,7 +52,6 @@ Represents the workers that are responsible for deposits.
 **Attributes:**
 - **Primary Key** ID: (Type: Integer)
 - Name: (Type: String)
-- Bank ID (Type: Integer)
 
 ### Deposit
 
@@ -106,10 +105,6 @@ Foreign Key: Interest Rate ID in the Deposit entity.
 Each account is in exactly one bank.
 Foreign Key: Bank ID in the Account entity.
 
-### Works In: Bank to Worker (One-to-Many)
-
-Each worker works in exactly one bank.
-Foreign Key: Bank ID in the Worker entity.
 
 ## Weak Entities
 
