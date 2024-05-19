@@ -5,7 +5,7 @@ USE
     -- Create Client table
 CREATE TABLE IF NOT EXISTS CLIENT(
     Client_ID VARCHAR(50) PRIMARY KEY CHECK
-        (ID >= 0),
+        (Client_ID >= 0),
         Client_NAME VARCHAR(255)
     CHECK
         (Client_NAME NOT REGEXP '[0-9]'),
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
     Worker_ID VARCHAR(50) PRIMARY KEY CHECK
-        (ID >= 0),
+        (Worker_ID >= 0),
         Worker_NAME VARCHAR(255)
     CHECK
         (Worker_NAME NOT REGEXP '[0-9]')
