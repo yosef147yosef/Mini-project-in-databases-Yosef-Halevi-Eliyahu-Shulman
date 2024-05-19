@@ -6,26 +6,26 @@ USE
 CREATE TABLE IF NOT EXISTS CLIENT(
     Client_ID VARCHAR(50) PRIMARY KEY CHECK
         (ID >= 0),
-        NAME VARCHAR(255)
+        Client_NAME VARCHAR(255)
     CHECK
-        (NAME NOT REGEXP '[0-9]'),
-        Address VARCHAR(255),
-        Phone_Number VARCHAR(20)
+        (Client_NAME NOT REGEXP '[0-9]'),
+        Client_Address VARCHAR(255),
+        Client_Phone_Number VARCHAR(20)
     CHECK
-        (Phone_Number LIKE '05%'),
-        Email VARCHAR(255)
+        (Client_Phone_Number LIKE '05%'),
+        Client_Email VARCHAR(255)
     CHECK
-        (Email LIKE '%@%.%')
+        (Client_Email LIKE '%@%.%')
 );
 -- Create Bank table
 CREATE TABLE IF NOT EXISTS Bank(
     Bank_ID VARCHAR(50) PRIMARY KEY CHECK
         (Bank_ID >= 0),
-        NAME VARCHAR(255),
-        Address VARCHAR(255),
-        Phone_Number VARCHAR(20)
+        Bank_NAME VARCHAR(255),
+        Bank_Address VARCHAR(255),
+        Bank_Phone_Number VARCHAR(20)
     CHECK
-        (Phone_Number LIKE '05%')
+        (Bank_Phone_Number LIKE '05%')
 );
 -- Create Account table
 CREATE TABLE IF NOT EXISTS ACCOUNT(
@@ -48,9 +48,9 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
 CREATE TABLE IF NOT EXISTS Worker(
     Worker_ID VARCHAR(50) PRIMARY KEY CHECK
         (ID >= 0),
-        NAME VARCHAR(255)
+        Worker_NAME VARCHAR(255)
     CHECK
-        (NAME NOT REGEXP '[0-9]')
+        (Worker_NAME NOT REGEXP '[0-9]')
 );
 -- Create Interest Rate table
 CREATE TABLE IF NOT EXISTS Interest_Rate(
