@@ -1,7 +1,9 @@
+
 # Mini Project In Databases
-# Deposits Department:
+## מגישים: אליהו שולמן ויוסף הלוי
+# Deposits Department - Bank:
 The Deposits Department is responsible for managing all aspects related to deposit accounts within the bank.
-This department oversees the opening, maintenance, and servicing of deposit accounts, which may include savings accounts, checking accounts, and certificates of deposit (CDs).
+This department therefore must know about all the depost, the accounts and banks they are in, the clients of those deposits and the workers who work on them.
 # Entity-Relationship Diagram (ERD)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/64e44721-f19c-42ef-a747-b9bdad8fb3bf)
 
@@ -115,4 +117,46 @@ It gets an attribute of Bank ID as part of its primary key.
 ### Deposit
 Deposit is a weak entity that is not fully defined without the entity Interest Rate.
 It gets an attribute of Interes Rate ID as part of its primary key.
+# הפעולות ליצירת הטבלאות
+מופיע בקובץ Generators שבתוך קובץ הדוח
+# הבסיס נתונים אחרי יצירת הטבלאות והכנסת הנתונים
+## הבסיס נתונים
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/40a5a6cf-bbfe-40ce-832e-5553283454f3)
+## הטבלאות
+### Account
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/f8cf122f-8302-443d-a30f-355fb827a2f7)
+### Bank
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/0b3b7f0a-db68-453d-8b13-34178a6e6ea4)
+### Client
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/4acf3735-2f43-47a2-a00c-efc13608bfbf)
+### Deposit
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/74d252b5-f3c7-4fd4-8744-4d027ecdff17)
+### Interest_Rate
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/9314f48f-4147-4d4d-b133-2a1a591234a5)
+### Worker
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/e690a9ba-17d8-402d-a1e6-42961c9d0c80)
+
+
+
+
+
+
+# גיבוי ושחזור נתונים
+## גיבוי נתונים
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/baa9076d-bf5a-4e78-b548-4add5e3e4446)
+## שחזור נתומים
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/abdc135a-bbc0-4811-88b1-7f9125b5c6dc)
+
+
+
+
+## הערות
+### הערה 1
+בהתחלה עשינו קשר בין WORKER לDEPOSIT ובנוסף עוד קשר בין WORKER לBANK. הבננו שכפל הקשרים האלה יוצר בעיה כי יכול להיות שעובד עובד בבנק ועובד על פקדון שנמצא בבנק אחר בכלל ולכן החלטנו להוריד את אחד מהקשרים. בחרנו להוריד את הקשר בין WORKER לBANK כיוון שהעבודה שלנו זה על פקדון ולכן היה נראה לנו יותר מתאים להשאיר כמה שיותר קשרים עם הישות של פקדון בעצמו
+### הערה 2
+עשינו את שלב א לפני שעודכנו הדרישות ולכן יש לנו רק 200 שורות בכל טבלה ולא 400. בנוסף יש טבלאות שיש קצת פחות מ-200 (בעררך 195) וזאת משום שכשמורידים קבצים מmockaroo יש כפילות לפעמים של ערכי מפתח והSQL כמובן יקבל רק אחד מהערכים האלה. החלטנו לא ליחס לדבר זה יותר מדי חשיבות כיוון שזה בסך הכל שורות בודדות של נתונים וזה לא השפיע על יצירת שאר הטבלאות כלל.
+### הערה 3
+בנוסף בגלל שעשינו את שלב א לפני שינוי הדרישות השדות הם לא מעודכנות לפי הדרישות והכל הוא מסוג VARCHAR חוץ מהתאריכים שהם כמובן בצורת DATE
+### הערה 4
+לשם של הבנקים יש שמות של FirstName מהאתר של mockaroo כי לא מצאנו משהו מציאותי יותר. שוב, לא ייחסנו לזה יותר מדי חשיבות כיוון שזה בכל זאת שם גם אם הוא לא לגמרי מציאותי.
 
