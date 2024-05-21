@@ -144,7 +144,7 @@ START TRANSACTION
 UPDATE
     deposit
 SET
-    deposit.Deposit_Date = '2024 -01 -01'
+    deposit.Deposit_Date = '2024-01-01'
 WHERE
     deposit.Deposit_ID IN(
     SELECT
