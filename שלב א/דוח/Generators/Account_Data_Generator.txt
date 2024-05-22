@@ -1,5 +1,5 @@
 Attribute: Account_Number
-Command: =CONCATENATE(IF(ROW()<=10,0,""),IF(ROW()<=100,0,""),ROW()-1)
+Command: =Row()-1
 Description:  Generates unique account numbers for each row. Makes sure they are all the same length for SQL to sort them properly.
 
 Attribute: Open_Date
