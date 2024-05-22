@@ -1,6 +1,6 @@
 Deposit_ID
-Command: =CONCATENATE(IF(ROW()<=10,0,""),IF(ROW()<=100,0,""),ROW()-1)
-Description:  Generates unique account numbers for each row. Makes sure they are all the same length for SQL to sort them properly.
+Command: =ROW()-1
+Description:  Generates unique account numbers for each row assigning them the value of the row.
 
 Deposit_Date
 Command: =TEXT(RANDBETWEEN(1900, 2024), "0000") & "-" & TEXT(RANDBETWEEN(1, 12), "00") & "-" & TEXT(RANDBETWEEN(1, 31), "00")
