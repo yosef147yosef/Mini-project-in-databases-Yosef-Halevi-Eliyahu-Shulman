@@ -4,7 +4,7 @@ USE
     bank_deposit;
     -- Create Client table
 CREATE TABLE IF NOT EXISTS CLIENT(
-    Client_ID VARCHAR(50) PRIMARY KEY CHECK
+    Client_ID int(50) PRIMARY KEY CHECK
         (Client_ID >= 0),
         Client_NAME VARCHAR(255)
     CHECK
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS CLIENT(
 );
 -- Create Bank table
 CREATE TABLE IF NOT EXISTS Bank(
-    Bank_ID VARCHAR(50) PRIMARY KEY CHECK
+    Bank_ID int(50) PRIMARY KEY CHECK
         (Bank_ID >= 0),
         Bank_NAME VARCHAR(255),
         Bank_Address VARCHAR(255),
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS Bank(
 );
 -- Create Account table
 CREATE TABLE IF NOT EXISTS ACCOUNT(
-    Account_Number VARCHAR(50) CHECK
+    Account_Number int(50) CHECK
         (Account_Number >= 0),
         Open_Date DATE,
         Balance DECIMAL(10, 2),
@@ -38,15 +38,15 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         (
             Account_Type = "Savings" OR Account_Type = "Business" OR Account_Type = "Checking"
         ),
-        Client_ID VARCHAR(50),
-        Bank_ID VARCHAR(50),
+        Client_ID int(50),
+        Bank_ID int(50),
         FOREIGN KEY(Client_ID) REFERENCES CLIENT(Client_ID),
         FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID),
     	PRIMARY KEY (Bank_ID,Account_Number)
 );
 -- Create Worker table
 CREATE TABLE IF NOT EXISTS Worker(
-    Worker_ID VARCHAR(50) PRIMARY KEY CHECK
+    Worker_ID int(50) PRIMARY KEY CHECK
         (Worker_ID >= 0),
         Worker_NAME VARCHAR(255)
     CHECK
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS Worker(
 );
 -- Create Interest Rate table
 CREATE TABLE IF NOT EXISTS Interest_Rate(
-    Interest_Rate_ID VARCHAR(50) PRIMARY KEY CHECK
+    Interest_Rate_ID int(50) PRIMARY KEY CHECK
         (Interest_Rate_ID >= 0),
         Benefits VARCHAR(255)
     CHECK
@@ -75,14 +75,14 @@ CREATE TABLE IF NOT EXISTS Interest_Rate(
 );
 -- Create Deposit table
 CREATE TABLE IF NOT EXISTS Deposit(
-    Deposit_ID VARCHAR(50) CHECK
+    Deposit_ID int(50) CHECK
         (Deposit_ID >= 0),
         Deposit_Date DATE,
         Amount DECIMAL(10, 2),
-        Account_Number VARCHAR(50),
-        Interest_Rate_ID VARCHAR(50),
-    	Bank_ID VARCHAR(50),
-    	Worker_ID VARCHAR(50),
+        Account_Number int(50),
+        Interest_Rate_ID int(50),
+    	Bank_ID int(50),
+    	Worker_ID int(50),
     	FOREIGN KEY (Worker_ID) REFERENCES Worker(Worker_ID),
         FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
