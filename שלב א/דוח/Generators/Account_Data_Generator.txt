@@ -1,6 +1,6 @@
 Attribute: Account_Number
 Command: =Row()-1
-Description:  Generates unique account numbers for each row. Makes sure they are all the same length for SQL to sort them properly.
+Description:  Generates unique account numbers for each row assigning them the value of the row.
 
 Attribute: Open_Date
 Command: =TEXT(RANDBETWEEN(1900, 2024), "0000") & "-" & TEXT(RANDBETWEEN(1, 12), "00") & "-" & TEXT(RANDBETWEEN(1, 31), "00")
