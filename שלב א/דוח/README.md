@@ -155,5 +155,5 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 ### הערה 3
 לשם של הבנקים יש שמות של FirstName מהאתר של mockaroo כי הדבר היחיד שמצאנו שמציאותי יותר כלל פסיקים שזה הפריע לקבצי הCSV.
 ### הערה 4
-לא העלנו קובץ insertTables.sql כיון שכללנו את התנאים על הטבלאות בקובץ createTables.sql וכיון שבPHPMYADMIN אפשר להשתמש בIMPORT במקום להשתמש בפעולת INSERT
+כללנו את createTables.sql ואת insertTales.sql בקובץ אחד של createTables+insertTable.sql כיון שכתבנו את התנאים בתוך הטבלאות ולא אחר כך בעזרת פעולת ALTER TABLE
 
