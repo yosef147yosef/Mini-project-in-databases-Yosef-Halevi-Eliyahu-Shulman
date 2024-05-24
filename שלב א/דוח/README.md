@@ -9,7 +9,7 @@ This department therefore must know about all the depost, the accounts and banks
 
 
 # Data Structure Diagram (DSD)
-![WhatsApp Image 2024-05-07 at 19 46 01_4b6fc5b4](https://github.com/yosef147yosef/Mini-project-in-databases/assets/128507240/66d66744-76a7-41a5-8f9c-378687efc2b0)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/d036d21c-97eb-4b84-b664-b38444eb3822)
 
 ## Entities:
 
