@@ -124,17 +124,17 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/40a5a6cf-bbfe-40ce-832e-5553283454f3)
 ## הטבלאות
 ### Account
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/f8cf122f-8302-443d-a30f-355fb827a2f7)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6e6f7da4-a9a0-4f41-8f91-ca923706fc41)
 ### Bank
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/0b3b7f0a-db68-453d-8b13-34178a6e6ea4)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/d6bb0d06-16a9-4d05-a8fc-74f017a5b90f)
 ### Client
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/4acf3735-2f43-47a2-a00c-efc13608bfbf)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/51310782-bc5e-43aa-91bd-fafff9fc9530)
 ### Deposit
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/74d252b5-f3c7-4fd4-8744-4d027ecdff17)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/87653e39-31b1-4d38-8e1a-31207477263d)
 ### Interest_Rate
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/9314f48f-4147-4d4d-b133-2a1a591234a5)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/5f683f47-7dda-4a5d-bfbf-06b6d571506c)
 ### Worker
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/e690a9ba-17d8-402d-a1e6-42961c9d0c80)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6bf0d380-e1f6-43ea-b293-86e4243be441)
 
 
 
