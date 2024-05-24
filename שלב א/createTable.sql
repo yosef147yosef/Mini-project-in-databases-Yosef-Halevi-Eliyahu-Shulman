@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS Interest_Rate(
         Benefits VARCHAR(255)
     CHECK
         (
-            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Solider" OR Benefits = "Student"
+            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Soldier" OR Benefits = "Student"
         ),
         TYPE VARCHAR(50)
     CHECK
