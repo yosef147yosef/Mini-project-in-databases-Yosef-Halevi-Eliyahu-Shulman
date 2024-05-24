@@ -143,12 +143,9 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 
 # גיבוי ושחזור נתונים
 ## גיבוי נתונים
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/baa9076d-bf5a-4e78-b548-4add5e3e4446)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/b352bfcc-aea0-4f6a-9e27-1f6731036597)
 ## שחזור נתומים
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/abdc135a-bbc0-4811-88b1-7f9125b5c6dc)
-
-
-
 
 ## הערות
 ### הערה 1
