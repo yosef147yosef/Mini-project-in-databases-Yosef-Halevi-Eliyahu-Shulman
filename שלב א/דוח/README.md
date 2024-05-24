@@ -121,7 +121,7 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 מופיע בקובץ Generators שבתוך קובץ הדוח
 # הבסיס נתונים אחרי יצירת הטבלאות והכנסת הנתונים
 ## הבסיס נתונים
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/40a5a6cf-bbfe-40ce-832e-5553283454f3)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/3b0d032d-b382-4104-8ed5-0a04461141b2)
 ## הטבלאות
 ### Account
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6e6f7da4-a9a0-4f41-8f91-ca923706fc41)
