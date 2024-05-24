@@ -86,5 +86,5 @@ CREATE TABLE IF NOT EXISTS Deposit(
     	FOREIGN KEY (Worker_ID) REFERENCES Worker(Worker_ID),
         FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
         FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
-    	PRIMARY KEY(Deposit_ID,Interest_Rate_ID)
+    	PRIMARY KEY(Deposit_ID,Account_Number, Bank_ID)
 );
