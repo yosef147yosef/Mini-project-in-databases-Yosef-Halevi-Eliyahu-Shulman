@@ -121,7 +121,7 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 מופיע בקובץ Generators שבתוך קובץ הדוח
 # הבסיס נתונים אחרי יצירת הטבלאות והכנסת הנתונים
 ## הבסיס נתונים
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/3b0d032d-b382-4104-8ed5-0a04461141b2)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/f0483f30-185d-4898-be32-3f1d9e7d1be6)
 ## הטבלאות
 ### Account
 -- Create Account table
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS ACCOUNT(
         PRIMARY KEY(Bank_ID, Account_Number)
 );
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/a691b9ce-9443-404d-aca0-bca9ba481540)
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6e6f7da4-a9a0-4f41-8f91-ca923706fc41)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/f59a6eca-8dcc-4952-9746-1d063fe4f998)
 ### Bank
 -- Create Bank table
 CREATE TABLE IF NOT EXISTS Bank(
@@ -195,7 +195,7 @@ CREATE TABLE IF NOT EXISTS Deposit(
         )
 );
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/027e2e18-bb3f-4663-a933-bdc104fe6308)
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/87653e39-31b1-4d38-8e1a-31207477263d)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6a465a4e-aed0-4dec-bcd6-45bd5b110cb4)
 ### Interest_Rate
 -- Create Interest Rate table
 CREATE TABLE IF NOT EXISTS Interest_Rate(
