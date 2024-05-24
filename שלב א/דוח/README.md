@@ -5,7 +5,7 @@
 The Deposits Department is responsible for managing all aspects related to deposit accounts within the bank.
 This department therefore must know about all the depost, the accounts and banks they are in, the clients of those deposits and the workers who work on them.
 # Entity-Relationship Diagram (ERD)
-![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/64e44721-f19c-42ef-a747-b9bdad8fb3bf)
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/99dc14fa-2af6-424d-892b-a164d2dc0465)
 
 
 # Data Structure Diagram (DSD)
@@ -61,11 +61,11 @@ Represents the deposits in an account.
 
 **Attributes:**
 - **Primary Key** Deposit ID: (Type: Integer or String)
-- **Primary Key** Interest Rate ID: (Type: Integer)
+- **Primary Key** Account Number: (Type: Integer)
+- **Primary Key** Bank ID: (Type: Integer)
+- Interest Rate ID: (Type: Integer)
 - Deposit Date: (Type: Date)
 - Amount: (Type: Numeric)
-- Account Number: (Type: Integer)
-- Bank ID: (Type: Integer)
 - Worker ID: (Type: Integer)
 
 ### Interest Rate
@@ -85,7 +85,7 @@ Represents the interest rates associated with deposits.
 ### In: Account to Deposit (One-to-Many)
 
 Each deposit is associated with exactly one account.
-Foreign Key: Account Number in the Deposit entity.
+Foreign Key: Account Number and Bank ID in the Deposit entity.
 
 ### Has: Client to Account (One-to-Many)
 
@@ -115,8 +115,8 @@ Account is a weak entity that is not fully defined without the entity Bank.
 It gets an attribute of Bank ID as part of its primary key.
 
 ### Deposit
-Deposit is a weak entity that is not fully defined without the entity Interest Rate.
-It gets an attribute of Interes Rate ID as part of its primary key.
+Deposit is a weak entity that is not fully defined without the entity Account.
+It gets the attributes of Bank ID and Account Number as part of its primary key.
 # הפעולות ליצירת הטבלאות
 מופיע בקובץ Generators שבתוך קובץ הדוח
 # הבסיס נתונים אחרי יצירת הטבלאות והכנסת הנתונים
