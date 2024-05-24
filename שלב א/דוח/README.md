@@ -124,16 +124,112 @@ It gets the attributes of Bank ID and Account Number as part of its primary key.
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/3b0d032d-b382-4104-8ed5-0a04461141b2)
 ## הטבלאות
 ### Account
+-- Create Account table
+CREATE TABLE IF NOT EXISTS ACCOUNT(
+    Account_Number INT(50) CHECK
+        (Account_Number >= 0),
+        Open_Date DATE,
+        Balance DECIMAL(10, 2),
+        Account_Type VARCHAR(50)
+    CHECK
+        (
+            Account_Type = "Savings" OR Account_Type = "Business" OR Account_Type = "Checking"
+        ),
+        Client_ID INT(50),
+        Bank_ID INT(50),
+        FOREIGN KEY(Client_ID) REFERENCES CLIENT(Client_ID),
+        FOREIGN KEY(Bank_ID) REFERENCES Bank(Bank_ID),
+        PRIMARY KEY(Bank_ID, Account_Number)
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/a691b9ce-9443-404d-aca0-bca9ba481540)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6e6f7da4-a9a0-4f41-8f91-ca923706fc41)
 ### Bank
+-- Create Bank table
+CREATE TABLE IF NOT EXISTS Bank(
+    Bank_ID INT(50) PRIMARY KEY CHECK
+        (Bank_ID >= 0),
+        Bank_NAME VARCHAR(255),
+        Bank_Address VARCHAR(255),
+        Bank_Phone_Number VARCHAR(20)
+    CHECK
+        (Bank_Phone_Number LIKE '05%')
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/5a8f6d48-00e5-4934-89f7-02d79e50eaf8)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/d6bb0d06-16a9-4d05-a8fc-74f017a5b90f)
 ### Client
+-- Create Client table 
+CREATE TABLE IF NOT EXISTS CLIENT(
+    Client_ID INT(50) PRIMARY KEY CHECK
+        (Client_ID >= 0),
+        Client_NAME VARCHAR(255)
+    CHECK
+        (Client_NAME NOT REGEXP '[0-9]'),
+        Client_Address VARCHAR(255),
+        Client_Phone_Number VARCHAR(20)
+    CHECK
+        (Client_Phone_Number LIKE '05%'),
+        Client_Email VARCHAR(255)
+    CHECK
+        (Client_Email LIKE '%@%.%')
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/a29e3840-eda7-48a3-9fb4-c161cb01ce38)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/51310782-bc5e-43aa-91bd-fafff9fc9530)
 ### Deposit
+-- Create Deposit table
+CREATE TABLE IF NOT EXISTS Deposit(
+    Deposit_ID INT(50) CHECK
+        (Deposit_ID >= 0),
+        Deposit_Date DATE,
+        Amount DECIMAL(10, 2),
+        Account_Number INT(50),
+        Interest_Rate_ID INT(50),
+        Bank_ID INT(50),
+        Worker_ID INT(50),
+        FOREIGN KEY(Worker_ID) REFERENCES Worker(Worker_ID),
+        FOREIGN KEY(Bank_ID, Account_Number) REFERENCES ACCOUNT(Bank_ID, Account_Number),
+        FOREIGN KEY(Interest_Rate_ID) REFERENCES Interest_Rate(Interest_Rate_ID),
+        PRIMARY KEY(
+            Deposit_ID,
+            Account_Number,
+            Bank_ID
+        )
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/027e2e18-bb3f-4663-a933-bdc104fe6308)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/87653e39-31b1-4d38-8e1a-31207477263d)
 ### Interest_Rate
+-- Create Interest Rate table
+CREATE TABLE IF NOT EXISTS Interest_Rate(
+    Interest_Rate_ID INT(50) PRIMARY KEY CHECK
+        (Interest_Rate_ID >= 0),
+        Benefits VARCHAR(255)
+    CHECK
+        (
+            Benefits = "None" OR Benefits = "Long-Term Customer" OR Benefits = "Soldier" OR Benefits = "Student"
+        ),
+        TYPE VARCHAR(50)
+    CHECK
+        (
+            TYPE = "Short-term" OR TYPE = "Long-term"
+        ),
+        Prime DECIMAL(10, 2)
+    CHECK
+        (Prime >= 0),
+        Interest DECIMAL(10, 2)
+    CHECK
+        (Interest >= 0)
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/82cd46d4-dac0-41aa-a60f-ee4a9c6461c4)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/5f683f47-7dda-4a5d-bfbf-06b6d571506c)
 ### Worker
+-- Create Worker table
+CREATE TABLE IF NOT EXISTS Worker(
+    Worker_ID INT(50) PRIMARY KEY CHECK
+        (Worker_ID >= 0),
+        Worker_NAME VARCHAR(255)
+    CHECK
+        (Worker_NAME NOT REGEXP '[0-9]')
+);
+![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/a38e3743-7b28-4e26-9b51-fb6fde3357a6)
 ![image](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/6bf0d380-e1f6-43ea-b293-86e4243be441)
 
 
