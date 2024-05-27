@@ -75,7 +75,6 @@
 ![Query #3 Run](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/f6d2799b-58a0-4aec-abe3-a79f0a0ad05e)
 #### After
 ![Query #3 After](https://github.com/yosef147yosef/Mini-project-in-databases/assets/126463473/631c8621-7f8d-46dc-9420-13ea8eea21d8)
-ניתן לראות את השינוי בשורה של Deposit_ID=16
 ## Query 2
 ### Description
 מעדכן את תאריך הפקדון להיות 1/1/2024 אם השם של הלקוח מתחיל בJ
