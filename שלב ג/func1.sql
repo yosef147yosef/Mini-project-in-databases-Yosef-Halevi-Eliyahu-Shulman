@@ -11,6 +11,3 @@ BEGIN
   RETURN LeftOver;
 END$$
 DELIMITER ;
-SELECT
-func(Balance,Amount),Balance,Amount
-FROM deposit NATURAL JOIN account;
